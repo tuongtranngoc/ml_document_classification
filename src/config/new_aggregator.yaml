@@ -1,0 +1,14 @@
+Dataset:
+  data_path: dataset/news_aggregator
+  eda: dataset/eda
+
+Cache:
+  train_path: .cache/train.pkl
+  valid_path: .cache/valid.pkl
+  test_path: .cache/test.pkl
+
+Model:
+  label_encode: {'b':0, 'e':1, 'm':2, 't':3}
+  hyper_param_path: .cache/hyper_params
+  model_path: .cache/best_model/
+  vectorizer_path: .cache/best_model/vectorizer.pkl

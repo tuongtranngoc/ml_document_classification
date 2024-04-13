@@ -1,0 +1,26 @@
+from __future__ import division
+from __future__ import print_function
+from __future__ import absolute_import
+
+from flask import Flask, jsonify, request
+from src.tools.predict import Predictor
+
+predictor = Predictor()
+
+app = Flask(__name__)
+
+@app.route('/classify', methods=['POST'])
+def classify():
+    data = request.get_json(silent=True)
+    pred, prob = predictor._predict(data['text'])
+    result = {
+        'text': data['text'],
+        'predicted_label': pred,
+        'prob': prob
+    }
+    
+    return jsonify(result)
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=2005, debug=True)
