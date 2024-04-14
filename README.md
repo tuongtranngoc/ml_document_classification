@@ -42,7 +42,7 @@ $python -m src.data.new_aggregator
 
 `train.txt`, `valid.txt`, and `test.txt` are saved to the `dataset/news_aggregator` folder.
 
-## 3. Data Exploration (problem 2-2)
+## 3. Data Exploration
 
 To statistic dataset on train, valid, test. Please follow the command line:
 
@@ -57,7 +57,7 @@ Results:
 | <img src='dataset/eda/category_eda.png'> | <img src='dataset/eda/word_eda.png'> |
 
 
-## 4. Model selection (problem 2-3)
+## 4. Model selection
 
 **Machine Learning Models**
 
@@ -98,7 +98,7 @@ The best model will be evaluated and saved in the `.cache/best_model` folder
 | XGBClassifier | 0.893846 |
 | **MultinomialNB** | **0.912011** |
 
-## 7. Model Deployment (problem 2-5)
+## 7. Model Deployment
 
 **List of labels endpoint**
 ```shell
