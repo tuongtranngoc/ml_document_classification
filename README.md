@@ -17,10 +17,10 @@ The project aims to classify the documents based on their title
 │   ├── data            # Exploratory data analysis 
 │   ├── deploy          # Rest API
 │   ├── models          # machine learning model list
-│   └── tools           # training, evaluation and hyper optimizer
+│   └── tools           # training, evaluation and hyper-optimizer
 │
-├── README.md           # Detail information about project
-└── requirements.txt    # packeges need to install
+├── README.md           # Detail information about the project
+└── requirements.txt    # packeges need to be installed
 
 ```
 
@@ -31,7 +31,7 @@ Please install the environment following command:
 pip install -r requirements.txt
 ```
 
-## 2. Dataset Preparation (problem 2-1)
+## 2. Dataset Preparation
 Please download [News Aggregator Dataset]() to put them in the `dataset` folder
 
 To extract and divide the dataset into train, valid, and test. Please follow the command line
@@ -69,7 +69,7 @@ List of ML Classifier Models
 + MultinomialNB
 
 
-## 5. Training and Evaluation (problem 2-3, 2-4)
+## 5. Training and Evaluation
 
 **Hyper Parameter Optimization**
 
