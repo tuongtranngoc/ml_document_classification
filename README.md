@@ -1,4 +1,4 @@
-## Test 2 
+## Document Classification
 
 The project aims to classify the documents based on their title
 
